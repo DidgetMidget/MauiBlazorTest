@@ -1,0 +1,10 @@
+﻿<Router AppAssembly="@typeof(RazorLib.App).Assembly">
+	<Found Context="routeData">
+		<RouteView RouteData="@routeData" DefaultLayout="@typeof(RazorLib.Shared.MainLayout)" />
+	</Found>
+	<NotFound>
+		<LayoutView Layout="@typeof(RazorLib.Shared.MainLayout)">
+			<p>Sorry, there's nothing at this address.</p>
+		</LayoutView>
+	</NotFound>
+</Router>
